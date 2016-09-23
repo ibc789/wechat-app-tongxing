@@ -1,0 +1,12 @@
+{
+  "name": "tongxing",
+  "version": "0.0.1",
+  "description": "这是一个有爱的交友小应用",
+  "homepage": "sike.io",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Howard Yeh",
+  "license": "MIT"
+}
