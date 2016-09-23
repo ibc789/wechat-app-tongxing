@@ -1,0 +1,29 @@
+<view class="page">
+	<view class="page__hd">
+		<text class="page__title">Howard @ sike.io</text>
+		<text class="page__desc">写 Haskell 的人是不是都很孤单？</text>
+		<image style="width: 100px; height: 100px; border-radius: 50px;" src="https://avatars3.githubusercontent.com/u/50120?v=3&s=466" mode="scaleToFit"/>
+	</view>
+
+	<view class="page__bd">
+			<view class="section">
+				<input placeholder="说说你的心情"
+					value="{{newMessageText}}"
+					bindfocus="bindfocus"
+					bindinput="bindinput"
+					bindchange="bindchange"
+					bindblur="bindblur"
+					/>
+			</view>
+
+			<view wx:for-items="{{messages}}">
+				<view>
+					{{item.message}}
+				</view>
+
+				<view>
+					{{item.createdAt}}
+				</view>
+			</view>
+	<view class="page__bd">
+</view>
