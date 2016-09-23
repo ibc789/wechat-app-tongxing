@@ -1,6 +1,8 @@
 
 sike.io x xitu.io 直播项目源代码
 
+![](github-friends.jpg)
+
 主播微信号：hayeah666
 
 # 开发界面介绍
