@@ -23,7 +23,7 @@
 			<view class="profile-message">
 				<view class="profile-message__body">
 					<view class="profile-message__star-wrapper">
-						<image class="profile-message__star" src="../image/icon-starred@3x.png" style="width: 25px; height: 25px"/>
+						<image class="profile-message__star" src="{{item.isLiked ? '../image/icon-starred@3x.png' : '../image/icon-star-gray@3x.png'}}" style="width: 25px; height: 25px" bindtap="toggleStar" data-id="{{item.id}}"/>
 						<view class="profile-message__star-count"> {{item.stars}} </view>
 					</view>
 
