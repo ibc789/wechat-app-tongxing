@@ -1,8 +1,6 @@
 {
   "pages": [
-      "page/component/index",
-
-      "page/API/index/index"
+      "page/profile"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -16,15 +14,15 @@
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [{
-      "pagePath": "page/component/index",
+      "pagePath": "page/profile",
       "iconPath": "image/wechat.png",
       "selectedIconPath": "image/wechatHL.png",
-      "text": "我的心情"
+      "text": "心情"
     }, {
-      "pagePath": "page/API/index/index",
+      "pagePath": "page/profile",
       "iconPath": "image/wechat.png",
       "selectedIconPath": "image/wechatHL.png",
-      "text": "八阿哥求助"
+      "text": "八阿哥"
     }]
   },
   "networkTimeout": {
