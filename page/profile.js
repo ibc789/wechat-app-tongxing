@@ -3,13 +3,15 @@ Page({
         newMessageText: "",
         messages: [
             {
-                message: 'TypeSript 用起来的确不错',
-                createdAt: new Date("2016/09/21"),
+                message: 'TypeScript 用起来的确不错',
+                createdAt: "2016/09/21",
+                stars: 2,
             },
 
             {
                 message: 'main = putStrLn "hello world"',
-                createdAt: new Date("2016/09/21"),
+                createdAt: "2016/09/21",
+                stars: 4,
             }
         ],
     },
@@ -24,15 +26,17 @@ Page({
 
         const { messages } = this.data;
 
+        const now = new Date();
         messages.unshift({
             message: newMessageText,
-            createdAt: new Date(),
+            createdAt: `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`,
         });
 
         // TODO use immutable
         this.setData({
             newMessageText: "",
             messages,
+            stars: 0,
         });
     },
 

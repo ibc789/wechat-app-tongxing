@@ -1,4 +1,84 @@
 page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  background-color: #FAFAFA;
+  color: #555555;
+  height: 100%;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  background-color: #FAFAFA;
+}
+
+.profile-header {
+  margin-top: 30px;
+}
+
+.profile-header__name-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-header__name {
+  margin-right: 8px;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.profile-header__badge {
+  background: #0068FF;
+  color: #FFF;
+  font-size: 10px;
+  padding: 3px;
+}
+
+.profile-message {
+  margin-top: 20px;
+}
+
+.profile-input {
+  margin: 30px 0;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+.profile-message__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-message__star-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.profile-message__star-count {
+  font-size: 10px;
+}
+
+.profile-message__text {
+  font-size: 16px;
+}
+
+.profile-message__created-at {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 12px;
+}
+
+/*
+page {
   background-color: #fbf9fe;
   height: 100%;
 }
@@ -17,7 +97,7 @@ page {
 }
 .page-header-text {
   padding: 20rpx 40rpx;
-  border-bottom: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc;
 }
 
 .page-body {
@@ -213,3 +293,4 @@ checkbox, radio{
 .section__ctn{
 
 }
+*/

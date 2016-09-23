@@ -1,8 +1,11 @@
 <view class="profile">
 	<view class="profile-header">
-		<text class="profile-header__name">hayeah666</text>
-		<text class="profile-header__badge">钻石 VIP</text>
 		<image class="profile-header__image" style="width: 100px; height: 100px; border-radius: 50px;" src="https://avatars3.githubusercontent.com/u/50120?v=3&s=466" mode="scaleToFit"/>
+
+		<view class="profile-header__name-wrapper">
+			<text class="profile-header__name">hayeah666</text>
+			<text class="profile-header__badge">钻石 VIP</text>
+		</view>
 	</view>
 
 	<view class="profile-input">
@@ -17,13 +20,24 @@
 
 	<view class="profile-timeline">
 		<view wx:for-items="{{messages}}">
-			<view class="profile-timeline__item">
-				{{item.message}}
+			<view class="profile-message">
+				<view class="profile-message__body">
+					<view class="profile-message__star-wrapper">
+						<image class="profile-message__star" src="../image/icon-starred@3x.png" style="width: 25px; height: 25px"/>
+						<view class="profile-message__star-count"> {{item.stars}} </view>
+					</view>
+
+					<view class="profile-message__text">
+						{{item.message}}
+					</view>
+				</view>
+
+				<view class="profile-message__created-at">
+					{{item.createdAt}}
+				</view>
 			</view>
 
-			<view class="profile-timeline__item">
-				{{item.createdAt}}
-			</view>
+
 		</view>
 	</view>
 </view>
